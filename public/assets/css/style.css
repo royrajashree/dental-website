@@ -1,0 +1,133 @@
+body {
+    overflow-x: hidden;
+}
+
+.body-color {
+    background-color: #F4F7F7;
+}
+
+.knowMoreBtn {
+    border-radius: 35px;
+    /* border: 2px solid #8DAB3E; */
+    border: 2px solid #18A98C;
+    margin-top: 20px;
+    padding: 14px;
+    /* color: #8DAB3E; */
+    font-weight: 600;
+    font-size: 16px;
+    font-family: 'Assistant';
+    background-color: #18A98C;
+    color: #F4F7F7;
+}
+
+.knowMoreBtn:hover {
+    /* background-color: #8DAB3E; */
+    background-color: #F4F7F7;
+    color: #18A98C;
+}
+
+.transparentBackground {
+    background: transparent;
+    transition: 0.5s;
+    top: 0;
+    position: sticky;
+}
+
+.whiteBackground {
+    background: #EAEAEA;
+    transition: 0.5s;
+    z-index: 99999;
+    top: 0;
+    position: sticky;
+    /* border-bottom: 2px solid #0056b3; */
+    box-shadow: 3px 3px 3px rgba(97, 96, 96, 0.3);
+}
+
+.backgroundImage {
+    background-image: url("../images/home.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 95vh;
+}
+
+.navLinks {
+    /* color: #646363;  */
+    color: #0056b3;
+    font-weight: 900;
+    font-size: 20px;
+    font-family: 'Assistant';
+}
+
+.headerContactDetails {
+    /* color: #646363;  */
+    color: #333333;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: 'Assistant';
+}
+
+.navLinks:hover {
+    text-decoration: none;
+}
+
+.aboutName {
+    font-family: 'Assistant';
+    font-weight: 900;
+    font-size: 48px;
+    /* color: #2080BC; */
+    color: #047995;
+}
+
+li {
+    font-family: 'Assistant';
+    font-weight: 700;
+    font-size: 24px;
+    color: #333333;
+}
+
+.servicesDiv {
+    /* margin-top: 75vh; */
+    /* background-color: aqua; */
+    height: 400px;
+}
+
+.sliderDiv {
+    /* margin-top: "75vh"; */
+    width: 20%;
+    height: 250px;
+    border-radius: 5px;
+    /*border: 2px solid lightgray; */
+}
+
+.slider {
+    height: 100%;
+    width: 2px;
+    background: white;
+}
+
+.serviceIntroName{
+    text-align: center;
+    font-family: 'Assistant';
+    font-weight: 900;
+    font-size: 24px;
+    /* color: #2080BC; */
+    color: #047995;
+}
+
+.serviceIntroText{
+    text-align: center;
+    font-family: 'Assistant';
+    font-weight: 700;
+    padding: 12px;
+    font-size: 20px;
+    /* color: #2080BC; */
+    color: #333333;
+}
+
+.footer{
+    background-color: #18A98C;
+    color: #F4F7F7;
+    height: 400px;
+    bottom: 0;
+}
