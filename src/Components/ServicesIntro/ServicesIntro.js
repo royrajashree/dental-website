@@ -17,7 +17,7 @@ const ServicesIntro = () => {
                             <p className="serviceIntroName mt-4">NAME OF THE SERVICE</p>
                             <p className="serviceIntroText">A one line description</p>
                         </div>
-                            <button className="knowMoreBtn" style={{transform: "translateX(85%)"}}>LEARN MORE</button>
+                            <button className="learnMoreBtn" style={{transform: "translateX(85%)"}}>LEARN MORE</button>
                     </div>
                 </div>
                 
@@ -34,7 +34,7 @@ const ServicesIntro = () => {
                             <p className="serviceIntroName mt-4">NAME OF THE SERVICE</p>
                             <p className="serviceIntroText">A one line description</p>
                         </div>
-                            <button className="knowMoreBtn" style={{transform: "translateX(85%)"}}>LEARN MORE</button>
+                            <button className="learnMoreBtn" style={{transform: "translateX(85%)"}}>LEARN MORE</button>
                     </div>
                 </div>
                 
@@ -51,7 +51,7 @@ const ServicesIntro = () => {
                             <p className="serviceIntroName mt-4">NAME OF THE SERVICE</p>
                             <p className="serviceIntroText">A one line description</p>
                         </div>
-                            <button className="knowMoreBtn" style={{transform: "translateX(85%)"}}>LEARN MORE</button>
+                            <button className="learnMoreBtn" style={{transform: "translateX(85%)"}}>LEARN MORE</button>
                     </div>
                 </div>
                 <div className="sliderDiv col-3">
@@ -67,7 +67,7 @@ const ServicesIntro = () => {
                             <p className="serviceIntroName mt-4">NAME OF THE SERVICE</p>
                             <p className="serviceIntroText">A one line description</p>
                         </div>
-                            <button className="knowMoreBtn" style={{transform: "translateX(85%)"}}>LEARN MORE</button>
+                            <button className="learnMoreBtn" style={{transform: "translateX(85%)"}}>LEARN MORE</button>
                     </div>
                 </div>
                 

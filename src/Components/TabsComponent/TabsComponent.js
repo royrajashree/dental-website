@@ -1,21 +1,26 @@
-import { Navbar, Nav } from 'react-bootstrap';
+import { Navbar, Nav, Container } from 'react-bootstrap';
 import { HashRouter, Link } from 'react-router-dom';
 
 const TabsComponent = () => {
   return (
     <div style={{ width: "100%" }}>
-      <Navbar>
-        <HashRouter>
-          <Nav className="ml-auto mr-4">
-            <Nav.Link><Link className="navLinks" to="/">HOME</Link></Nav.Link>
-            <Nav.Link><Link className="navLinks" to="/about">ABOUT US</Link></Nav.Link>
-            <Nav.Link><Link className="navLinks" to="/about">SERVICES</Link></Nav.Link>
-            <Nav.Link><Link className="navLinks" to="/about">GALLERY</Link></Nav.Link>
-            <Nav.Link><Link className="navLinks" to="/about">CONTACT US</Link></Nav.Link>
-            <Nav.Link><Link className="navLinks" to="/about">COVID-19</Link></Nav.Link>
-            {/* <Nav.Link href="#pricing">Pricing</Nav.Link> */}
-          </Nav>
-        </HashRouter>
+      <Navbar collapseOnSelect expand="sm">
+        <Container>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <HashRouter>
+              <Nav className="justify-content-end ml-auto mr-4">
+                <Nav.Link><Link className="navLinks" to="/">HOME</Link></Nav.Link>
+                <Nav.Link><Link className="navLinks" to="/about">ABOUT US</Link></Nav.Link>
+                <Nav.Link><Link className="navLinks" to="/about">SERVICES</Link></Nav.Link>
+                <Nav.Link><Link className="navLinks" to="/about">GALLERY</Link></Nav.Link>
+                <Nav.Link><Link className="navLinks" to="/about">CONTACT US</Link></Nav.Link>
+                <Nav.Link><Link className="navLinks" to="/about">COVID-19</Link></Nav.Link>
+                {/* <Nav.Link href="#pricing">Pricing</Nav.Link> */}
+              </Nav>
+            </HashRouter>
+          </Navbar.Collapse>
+        </Container>
         {/* <Form inline>
                     <FormControl type="text" placeholder="Search" className="mr-sm-2" />
                     <Button variant="outline-info">Search</Button>

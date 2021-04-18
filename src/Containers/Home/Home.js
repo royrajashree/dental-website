@@ -1,5 +1,6 @@
 import React from 'react';
 import statelessComponents from '../../Components';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 class Home extends React.Component {
 
@@ -22,7 +23,7 @@ class Home extends React.Component {
 
     handleScroll = () => {
         console.log("Scrolling", window.pageYOffset);
-        if (window.pageYOffset > 350) {
+        if (window.pageYOffset > 20) {
             this.setState({ headerBackground: "whiteBackground" });
         } else {
             this.setState({ headerBackground: "transparentBackground" });
@@ -31,18 +32,27 @@ class Home extends React.Component {
 
     render() {
         return (
-            <div className="backgroundImage">
+            <div className=" container-fluid backgroundImage">
                 <div>
                     <div style={{ top: 0, position: 'sticky', zIndex: 9999 }}>
                         <statelessComponents.Header background={this.state.headerBackground} />
                     </div>
                     <statelessComponents.AboutIntro />
-                    <statelessComponents.ServicesIntro />
-                    {/* <div style={{marginTop: "100px", position: "fixed", top: "90%"}}>
-                    <img src={process.env.PUBLIC_URL + 'assets/images/teeth.jpg'} width="100%" height="500px" />
-                </div> */}
-                    <div style={{ marginTop: "100px", height: "400px" }}>
-                        {/* <img src={process.env.PUBLIC_URL + 'assets/images/teeth.jpg'} width="100%" height="500px" /> */}
+                    <hr style={{ marginTop: "100px" }} />
+                    <ScrollAnimation animateIn="animate__animated animate__slideIn">
+                        <statelessComponents.ServicesIntro />
+                    </ScrollAnimation>
+                    <hr style={{ marginTop: "150px" }} />
+                    <div style={{ height: '75vh', width: "100%", marginTop: "100px", marginBottom: "200px" }}>
+                        {/* <div className="row d-flex">
+                            <div className="col-md-6 col-sm-12">
+                                <statelessComponents.Location />
+                            </div>
+                            <div className="col-md-6 col-sm-12 d-flex justify-content-center">
+                                <h2>Some huge text</h2>
+                            </div>
+                        </div> */}
+                        <statelessComponents.Location />
                     </div>
                     <statelessComponents.Footer />
                 </div>
